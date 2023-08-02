@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Delegate Operations</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+            <li id="caption"><a href="index.html">DELEGATE OPERATIONS</a></li>
+            <div class="nav-links" id="nav-Link">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="whyus.html">WHY US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+            
+    </section>
+<!-- ----------------------------------------------about us------------------------------------------------->
+<section class="about-us">
+    <div class="row">
+    <div class="about-col">
+     <h1>Welcome</h1>
+     <h5>Mission Statement</h5>
+        <p>At Delegate Operations, our mission is to empower businesses and organizations with cutting-edge data annotation, natural language processing (NLP), and computer vision solutions. We are committed to delivering high-quality, accurate, and scalable services that enable our clients to unlock the true potential of their data-driven projects. Through innovation, collaboration, and a passion for excellence, we strive to be the trusted partner that transforms raw data into actionable insights and drives meaningful impact across industries.</p>
+     <h5>Vision Statement </h5>
+       <p>
+        Our vision is to become a global leader in providing data annotation, NLP, and computer vision services that drive innovation and create positive change in the world. By leveraging the latest technologies and employing a team of dedicated experts, we aim to set new standards of excellence in the field, setting ourselves apart through exceptional quality, reliability, and customer satisfaction. As we expand our reach and offerings, we envision a future where Delegate Operations plays a pivotal role in revolutionizing industries through data-driven decision-making, fostering advancements in AI and machine learning, and ultimately contributing to a smarter and more interconnected world</p>
+     <h5>Your Trusted Data Partner </h5>
+        <p>
+        As Your Trusted Technology Partner, we are committed to driving excellence in everything we do. Let's embark on this exciting journey together, transforming your data into actionable insights and making a lasting impact on your industry.</p>
+     <a href="services.html" class="hero-btn red-btn">Explore More</a>
+    </div>
+    <div class="about-col">
+     <img src="images/user3.jpg">
+    </div>
+ 
+    </div>
+ </section>
+
+
+    
+<!---------------------------Footer------------------------------------------->
+<section class="footer">
+    <h4>About US</h4>
+    <p>Delegate Operations is your gateway to unlocking the full capabilities of AI, ensuring your success in the rapidly evolving world of artificial intelligence</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p> &copy; Delegate Operations. All rights reserved.</p>
+
+</section>
+<!-------------------------------------- script ------------------------------------------->
+<script>
+    var navLinks = document.getElementById("nav-Link");
+function showMenu() {
+    navLinks.style.right = "0";
+}
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+</script>
+    
+</body>
+</html>

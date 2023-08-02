@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Delegate Operations</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+          <section class="sub-header">
+            <nav>
+                <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+                <li id="caption"><a href="index.html">DELEGATE OPERATIONS</a></li>
+                <div class="nav-links" id="nav-Link">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="whyus.html">WHY US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+            <h3>Fill the form below and our sales team will reach out to you as soon as posible</h3>
+          </section>
+<!--------- contact us ------------------------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044269423!2d36.764995867044306!3d-1.3030359784700125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1690663629138!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-house"></i>  
+                <span>
+                    <h5>XYZ ROAD, ABC Building</h5>
+                    <p>Kasarani, Nairobi, KE</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>    
+                <span>
+                    <h5>+254 1234567890</h5>
+                    <p>Mon to Sunday, 9AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>  
+                <span>
+                    <h5>info@delegateops.com</h5>
+                    <p>Email us your concerns</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="https://formspree.io/f/mzbldaqb" method="post">
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="Email" name="Email" placeholder="Enter Email address" required>
+                <input type="Subject" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="Submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-----------------------footer------------------------------------------>
+<section class="footer">
+    <h4>About US</h4>
+    <p>Delegate Operations is your gateway to unlocking the full capabilities of AI, ensuring your success in the rapidly evolving world of artificial intelligence</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made With <i class="fas fa-heart"></i> S4M</p>
+
+</section>
+<!---------------------------form script ------------------>
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      // Prevent the form from submitting normally
+      event.preventDefault();
+      
+      // Get the form element
+      const form = event.target;
+      
+      // Reset the form fields
+      form.reset();
+    });
+  </script>
+<!--------------------------------- nav script ----------------------------------->
+<script>
+    var navLinks = document.getElementById("nav-Link");
+function showMenu() {
+    navLinks.style.right = "0";
+}
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+</script>
+</body>
+
+</html>
